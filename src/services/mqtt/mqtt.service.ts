@@ -106,7 +106,7 @@ export class MQTTService implements TransportService {
       'password': this.config.pass
     };
 
-    const url = scheme + '://' + this.config.host + ':' + this.config.port;
+    const url = scheme + '://' + this.config.host + ':' + this.config.port + '/mqtt';
 
     // Create the client and listen for its connection
     this.client = connect(url, options);

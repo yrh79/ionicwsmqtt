@@ -1,16 +1,16 @@
 {
-    "host": "schadronds.synology.me",
-    "port": 9883,
-    "ssl": true,
+    "host": "192.168.43.190",
+    "port": 8083,
+    "ssl": false,
 
-    "user": "username",
-    "pass": "changeme",
+    "user": "guest",
+    "pass": "guest",
 
     "subscribe": [
-        "Testy"
+        "/testpy"
     ],
     "publish": [
-        "Testy"
+        "/testpy"
     ],
 
     "keepalive": 10

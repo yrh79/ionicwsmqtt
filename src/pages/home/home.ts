@@ -11,7 +11,7 @@ import { Packet } from 'mqtt';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
-  providers: [MQTTService, ConfigService]
+  providers: [MQTTService, ConfigService],
 })
 
 export class HomePage implements OnInit, OnDestroy {
@@ -68,6 +68,6 @@ export class HomePage implements OnInit, OnDestroy {
   };
 
   sendMQTTMessage() {
-    this._mqttClient.publish("Hai :3")
+    this._mqttClient.publish("act")
   }
 }

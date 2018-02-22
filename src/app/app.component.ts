@@ -17,6 +17,16 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
       Splashscreen.hide();
+
+      document.addEventListener("pause", function() {
+        console.log("pause");
+       }, false);
+       document.addEventListener("resume", function() {
+        console.log("resume");
+       }, false);
     });
+
+    
   }
+
 }
